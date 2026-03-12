@@ -17,7 +17,7 @@ function BlogPost({ blogs }) {
         <div className="card-body">
           <h1 className="card-title">{post.title}</h1>
           <p className="text-muted small">
-            Published on: {new Date(post.date).toLocaleDateString()}
+            Published: {new Date(post.date).toLocaleDateString()}
           </p>
           <ReactMarkdown rehypePlugins={[rehypeRaw]} >{post.content}</ReactMarkdown>
           <Link to="/" >
